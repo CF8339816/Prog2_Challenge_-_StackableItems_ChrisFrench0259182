@@ -43,12 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="coin.cs" />
+    <Compile Include="Coin.cs" />
+    <Compile Include="Dagger.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="InventorySlot.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RestorePotion.cs" />
     <Compile Include="WizardHat.cs" />
   </ItemGroup>
   <ItemGroup>
