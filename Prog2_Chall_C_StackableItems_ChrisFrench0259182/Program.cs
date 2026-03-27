@@ -8,12 +8,16 @@ namespace Prog2_Chall_C_StackableItems_ChrisFrench0259182
 {
    public class Program
    {
-       static void Main()
+
+        public List<Inventory> inventories = new List<Inventory>();
+       public static void Main()
 
        {
+
+            //inventories.Add(Inventory myInventory = new Inventory(4));
+            //inventories.Add(Inventory friendInventory = new Inventory(4));
             Inventory myInventory = new Inventory(4);
             Inventory friendInventory = new Inventory(4);
-
             bool running = true;
 
             while (running)
@@ -24,7 +28,7 @@ namespace Prog2_Chall_C_StackableItems_ChrisFrench0259182
                // Console.SetCursorPosition(1, 2);
                 Console.WriteLine("\n[1-4] Add: Coin, Restore Potion, Wizard Hat, Dagger \n");
                // Console.SetCursorPosition(1, 3);
-                Console.WriteLine("| [Q-R] Remove Slot 1-4 | [X] Exit\n\n");
+                Console.WriteLine("| [Q-R] Remove Slot 1-4 | [T] to Trade an item to Friend inventory |[X] Exit\n\n");
                
 
                  Console.ForegroundColor = ConsoleColor.Yellow;
@@ -45,7 +49,7 @@ namespace Prog2_Chall_C_StackableItems_ChrisFrench0259182
                // Console.SetCursorPosition(60, 2);
                 Console.WriteLine("\n[7-0] Add: Coin, Restore Potion, Wizard Hat, Dagger \n");
                // Console.SetCursorPosition(60, 3);
-                Console.WriteLine("| [U-P] Remove Slot 1-4 | [M] Exit\n\n");
+                Console.WriteLine("| [U-P] Remove Slot 1-4 | [Y] to Yeet an item at My inventory | [M] Exit\n\n");
                
 
 
@@ -77,6 +81,7 @@ namespace Prog2_Chall_C_StackableItems_ChrisFrench0259182
                     case ConsoleKey.W: myInventory.RemoveItem(1); break;
                     case ConsoleKey.E: myInventory.RemoveItem(2); break;
                     case ConsoleKey.R: myInventory.RemoveItem(3); break;
+                   //case ConsoleKey.T: myInventory.TradeItem(heldItem); break;
                     case ConsoleKey.X: running = false; break;
 
                     case ConsoleKey.D7: friendInventory.AddItem(new Coin()); break;
@@ -87,6 +92,7 @@ namespace Prog2_Chall_C_StackableItems_ChrisFrench0259182
                     case ConsoleKey.I: friendInventory.RemoveItem(1); break;
                     case ConsoleKey.O: friendInventory.RemoveItem(2); break;
                     case ConsoleKey.P: friendInventory.RemoveItem(3); break;
+                     //case ConsoleKey.Y: myInventory.TradeItem(heldItem); break;
                     case ConsoleKey.M: running = false; break;
 
 
