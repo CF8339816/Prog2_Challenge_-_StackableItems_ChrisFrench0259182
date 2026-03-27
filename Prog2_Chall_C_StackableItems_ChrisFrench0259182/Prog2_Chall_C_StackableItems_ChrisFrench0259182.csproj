@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5EA762A4-2211-4DD1-AD10-FD7F41CDFA22}</ProjectGuid>
+    <ProjectGuid>{140606C6-80C1-41B4-894F-B9388467B657}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>rog__Challenge_ς___StackableItems_ChrisFrench0259182</RootNamespace>
-    <AssemblyName>rog%40_Challenge-ς _ StackableItems_ChrisFrench0259182</AssemblyName>
+    <RootNamespace>Prog2_Chall_C_StackableItems_ChrisFrench0259182</RootNamespace>
+    <AssemblyName>Prog2_Chall_C_StackableItems_ChrisFrench0259182</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

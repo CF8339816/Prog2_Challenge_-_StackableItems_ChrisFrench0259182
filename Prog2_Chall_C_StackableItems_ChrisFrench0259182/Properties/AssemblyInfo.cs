@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("rog@_Challenge-ς _ StackableItems_ChrisFrench0259182")]
+[assembly: AssemblyTitle("Prog2_Chall_C_StackableItems_ChrisFrench0259182")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("rog@_Challenge-ς _ StackableItems_ChrisFrench0259182")]
+[assembly: AssemblyProduct("Prog2_Chall_C_StackableItems_ChrisFrench0259182")]
 [assembly: AssemblyCopyright("Copyright ©  2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5ea762a4-2211-4dd1-ad10-fd7f41cdfa22")]
+[assembly: Guid("140606c6-80c1-41b4-894f-b9388467b657")]
 
 // Version information for an assembly consists of the following four values:
 //
