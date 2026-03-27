@@ -18,7 +18,7 @@ namespace Prog2_Chall_C_StackableItems_ChrisFrench0259182
             
             _size = Size;
             //_items[i] = new InventorySlot[Size];   
-
+            _items = new InventorySlot[Size];
             //Size = 4;
 
 
@@ -41,7 +41,8 @@ namespace Prog2_Chall_C_StackableItems_ChrisFrench0259182
             {
                 foreach (var slot in _items)
                 {
-                    if (slot._item != null && slot._item._description == item._description)
+                   // if (slot._item != null && slot._item._description == item._description)
+                    if (slot._item != null && slot._item.GetType() == item.GetType())
                     {
                         slot._amount++;
                         // return (_items[_size] = true);
@@ -66,18 +67,18 @@ namespace Prog2_Chall_C_StackableItems_ChrisFrench0259182
 
 
 
-        public void RemoveItem(int equipLst)
+        public void RemoveItem(int index)
         {
-            if (equipLst < 0 || equipLst >= _items.Length || _items[equipLst]._item == null) return;
+            if (index < 0 || index >= _items.Length || _items[index]._item == null) return;
 
-            if (_items[equipLst]._item._isStackable && _items[equipLst]._amount > 1)
+            if (_items[index]._item._isStackable && _items[index]._amount > 1)
             {
-                _items[equipLst]._amount--;
+                _items[index]._amount--;
             }
             else
             {
-                _items[equipLst]._item = null;
-                _items[equipLst]._amount = 0;
+                _items[index]._item = null;
+                _items[index]._amount = 0;
             }
         }
 
