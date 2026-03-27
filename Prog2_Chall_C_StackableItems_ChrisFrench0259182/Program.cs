@@ -45,15 +45,15 @@ namespace Prog2_Chall_C_StackableItems_ChrisFrench0259182
                // Console.SetCursorPosition(60, 2);
                 Console.WriteLine("\n[7-0] Add: Coin, Restore Potion, Wizard Hat, Dagger \n");
                // Console.SetCursorPosition(60, 3);
-                Console.WriteLine("| [U-P] Remove Slot 1-4 | [m] Exit\n\n");
+                Console.WriteLine("| [U-P] Remove Slot 1-4 | [M] Exit\n\n");
                
 
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("~~~~~ FRIEND INVENTORY SYSTEM ~~~~~");
-                for (int i = 0; i < myInventory._items.Length; i++)
+                for (int i = 0; i < friendInventory._items.Length; i++)
                 {
-                    var slot = myInventory._items[i];
+                    var slot = friendInventory._items[i];
                     string info = slot._item == null ? "Empty" : slot._item._description;
                     string count = (slot._item != null && slot._item._isStackable) ? $" (x{slot._amount})" : "";
 
