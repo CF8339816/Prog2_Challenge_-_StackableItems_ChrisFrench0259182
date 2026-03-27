@@ -12,7 +12,7 @@ namespace Prog2_Chall_C_StackableItems_ChrisFrench0259182
         public bool _isStackable {  get; set; }    
         public int _value { get; set; }
 
-        protected Item(string Description, bool IsStackable, int Value )
+        public Item(string Description, bool IsStackable, int Value )
         {
 
             _description = Description;

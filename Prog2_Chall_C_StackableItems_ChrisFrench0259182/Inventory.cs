@@ -14,10 +14,12 @@ namespace Prog2_Chall_C_StackableItems_ChrisFrench0259182
         private int _size { get;  set; }
 
         public Inventory(int Size)
-        { _size = Size;
+        { 
+            
+            _size = Size;
             //_items[i] = new InventorySlot[Size];   
 
-            Size = 4;
+            //Size = 4;
 
 
             for (int i = 0; i < Size; i++)
@@ -32,41 +34,51 @@ namespace Prog2_Chall_C_StackableItems_ChrisFrench0259182
         }
 
 
-
-
-
-        public void AddItem()
+        public bool AddItem(Item item)
         {
 
-            Console.ReadKey();
-
-
-
-            switch (Item item)
+           if (item._isStackable)
             {
-                case 1: item = Coin.coin; break;
-                case 2: item = RestorePotion; break;
-                case 3: item = WizardHat; break;
-                case 4: item = Dagger.dagger; break;
-
+                foreach (var slot in _items)
+                {
+                    if (slot._item != null && slot._item._description == item._description)
+                    {
+                        slot._amount++;
+                        // return (_items[_size] = true);
+                        return true;
+                    }
                 }
-
-                //for (int i = 0; i < Size; i++)
-                //{
-
-                //    _items[i] = item;
-                //}
-
-
-            } 
-        }
+            }
 
          
 
-        public void RemoveItem()
+            foreach (var slot in _items)
+            {
+                if (slot._item == null)
+                {
+                    slot._item = item;
+                    slot._amount = 1;
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
+
+        public void RemoveItem(int equipLst)
         {
+            if (equipLst < 0 || equipLst >= _items.Length || _items[equipLst]._item == null) return;
 
-
+            if (_items[equipLst]._item._isStackable && _items[equipLst]._amount > 1)
+            {
+                _items[equipLst]._amount--;
+            }
+            else
+            {
+                _items[equipLst]._item = null;
+                _items[equipLst]._amount = 0;
+            }
         }
 
 
