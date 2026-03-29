@@ -81,7 +81,8 @@ namespace Prog2_Chall_C_StackableItems_ChrisFrench0259182
                     case ConsoleKey.W: myInventory.RemoveItem(1); break;
                     case ConsoleKey.E: myInventory.RemoveItem(2); break;
                     case ConsoleKey.R: myInventory.RemoveItem(3); break;
-                   //case ConsoleKey.T: myInventory.TradeItem(heldItem); break;
+                    case ConsoleKey.T: Console.SetCursorPosition(1, 13); Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine($"Sorry  the Tariffs are  too high  and tradeing is currently closed"); Console.ReadKey(true); break;
+                    //case ConsoleKey.T: myInventory.TradeItem(heldItem); break;
                     case ConsoleKey.X: running = false; break;
 
                     case ConsoleKey.D7: friendInventory.AddItem(new Coin()); break;
@@ -92,7 +93,8 @@ namespace Prog2_Chall_C_StackableItems_ChrisFrench0259182
                     case ConsoleKey.I: friendInventory.RemoveItem(1); break;
                     case ConsoleKey.O: friendInventory.RemoveItem(2); break;
                     case ConsoleKey.P: friendInventory.RemoveItem(3); break;
-                     //case ConsoleKey.Y: myInventory.TradeItem(heldItem); break;
+                    case ConsoleKey.Y: Console.SetCursorPosition(1, 13); Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine($"Sorry  the Tariffs are  too high  and tradeing is currently closed"); Console.ReadKey(true) ; break;
+                    //case ConsoleKey.Y: myInventory.TradeItem(heldItem); break;
                     case ConsoleKey.M: running = false; break;
 
 
